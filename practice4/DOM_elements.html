@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<title>DOM Elements</title>
+
+<body background="background.jpg">
+    <h1>JS HTML DOM Elements</h1>
+    <p id="intro"><strong>Finding HTML Elements by Id</strong></p>
+    <p>This example demonstrates the <b>getElementsById</b> method.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const element = document.getElementById("intro");
+
+        document.getElementById("demo").innerHTML =
+            "The text from the intro paragraph is: " + element.innerHTML;
+
+    </script>
+    <br>
+    <p><strong>Finding HTML Elements by Tag Name</strong></p>
+    <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const element = document.getElementsByTagName("p");
+
+        document.getElementById("demo").innerHTML = 'The text in first paragraph (index 0) is: ' + element[0].innerHTML;
+
+    </script>
+    <br>
+    <div id="main">
+        <p><strong>Finding HTML Elements by Tag Name</strong></p>
+        <p>This example demonstrates the <b>getElementsByTagName</b> method.</p>
+    </div>
+
+    <p id="demo"></p>
+
+    <script>
+        const x = document.getElementById("main");
+        const y = x.getElementsByTagName("p");
+
+        document.getElementById("demo").innerHTML =
+            'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
+
+    </script>
+    <br>
+    <p><strong>Finding HTML Elements by Class Name</strong></p>
+    <p class="intro">Hello World!</p>
+    <p class="intro">This example demonstrates the <b>getElementsByClassName</b> method.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const x = document.getElementsByClassName("intro");
+        document.getElementById("demo").innerHTML =
+            'The first paragraph (index 0) with class="intro" is: ' + x[0].innerHTML;
+    </script>
+    <br>
+    <p><strong>Finding HTML Eelements by Query Selector</strong></p>
+    <p class="intro">Hello World!.</p>
+    <p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const x = document.querySelectorAll("p.intro");
+        document.getElementById("demo").innerHTML =
+            'The first paragraph (index 0) with class="intro" is: ' + x[0].innerHTML;
+    </script>
+</body>
+
+</html>

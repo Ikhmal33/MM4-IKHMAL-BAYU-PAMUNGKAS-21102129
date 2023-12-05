@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM INTRO</title>
+</head>
+
+<body background="background.jpg">
+    <h1>Menemukan elemen html dengan id</h1>
+    <p id="intro">Hello World!</p>
+    <p>Contoh : <b>getElementById</b></p>
+    <script>
+        x = document.getElementById("intro");
+        document.write("<Teks dari id sebagai intro paragraf: " + x.innerHTML + "</p>")
+    </script>
+    <br>
+    <h1> Menemukan elemen html dengan name tag</h1>
+    <p>Hello World!</p>
+    <div id="main">
+        <p> DOM sangat berguna</p>
+        <p>Contoh ini mendemonstrasikan fitur <b>getElementsByTagName</b></p>
+    </div>
+    <script>
+        var x = document.getElementById("main");
+        var y = x.getElementsByTagName("p");
+        document.write('id="main"dengan paragraf pertama di bagian：' + y[0].innerHTML);
+    </script>
+    <br>
+    <h1>Menemukan elemen html dengan nama kelas</h1>
+    <p class="intro">Hello World!</p>
+    <p>Contoh tersebut menunjukan metode <b>getElementsByClassName</b></p>
+    <script>
+        x = document.getElementsByClassName("intro");
+        document.write("<p>teks dari elemen class untuk intro paragraf: " + x[0].innerHTML + "</p>");
+    </script>
+    <h1>Dapatkan info lebih lanjut dengan tautan dibawah ini!</h1>
+    <p><a href="https://www.w3schools.com/js/js_htmldom.asp">JS HTML DOM intro</a></p>
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUGAS PEMROGRAMAN WEB / Practice 4</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      [class*="col-"] {
+        float: left;
+        padding: 15px;
+      }
+
+      html {
+        font-family: "Lucida Sans", sans-serif;
+        background: #ffffff;
+      }
+
+      .body {
+        background-image: url(/Practice4/img/background.jpg);
+      }
+
+      .header {
+        background: url(img/background.jpg) no-repeat center fixed;
+        color: #ffffff;
+        padding: 40px;
+        font-size: 20px;
+        background-size: cover;
+        color: #000000;
+      }
+
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu li {
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: #f7bd66ca;
+        color: #000000;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .menu li:hover {
+        background-color: #525306;
+      }
+
+      .aside {
+        background: #f7bd66ca;
+        padding: 15px;
+        color: #000000;
+        text-align: center;
+        font-size: 14px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        border-radius: 15px;
+      }
+
+      .footer {
+        background: url(img/background.jpg) no-repeat center fixed;
+        background-size: cover;
+        color: #ffffff;
+        text-align: center;
+        font-size: 12px;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 0 6px 10px 0 rgba(29, 3, 41, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      /* For mobile phones: */
+      [class*="col-"] {
+        width: 100%;
+      }
+
+      @media only screen and (min-width: 600px) {
+        /* For tablets: */
+        .col-s-1 {
+          width: 8.33%;
+        }
+        .col-s-2 {
+          width: 16.66%;
+        }
+        .col-s-3 {
+          width: 25%;
+        }
+        .col-s-4 {
+          width: 33.33%;
+        }
+        .col-s-5 {
+          width: 41.66%;
+        }
+        .col-s-6 {
+          width: 50%;
+        }
+        .col-s-7 {
+          width: 58.33%;
+        }
+        .col-s-8 {
+          width: 66.66%;
+        }
+        .col-s-9 {
+          width: 75%;
+        }
+        .col-s-10 {
+          width: 83.33%;
+        }
+        .col-s-11 {
+          width: 91.66%;
+        }
+        .col-s-12 {
+          width: 100%;
+        }
+      }
+      @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .col-1 {
+          width: 8.33%;
+        }
+        .col-2 {
+          width: 16.66%;
+        }
+        .col-3 {
+          width: 25%;
+        }
+        .col-4 {
+          width: 33.33%;
+        }
+        .col-5 {
+          width: 41.66%;
+        }
+        .col-6 {
+          width: 50%;
+        }
+        .col-7 {
+          width: 58.33%;
+        }
+        .col-8 {
+          width: 66.66%;
+        }
+        .col-9 {
+          width: 75%;
+        }
+        .col-10 {
+          width: 83.33%;
+        }
+        .col-11 {
+          width: 91.66%;
+        }
+        .col-12 {
+          width: 100%;
+        }
+        .rounded-image {
+          border-radius: 100px;
+          -webkit-border-radius: 100px;
+          -moz-border-radius: 100px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1><strong>IKHMAL BAYU PAMUNGKAS | 21102129</strong></h1>
+    </div>
+
+    <div class="row">
+      <div class="col-3 col-s-3 menu">
+        <ul>
+          <li><a href="inline_script.html">Inline Script</a></li>
+          <li><a href="embedded_script.html">Embedded Script</a></li>
+          <li><a href="external_script.html">External Script</a></li>
+          <li><a href="DOM_intro.html">DOM Intro</a></li>
+          <li><a href="dom_methods.html">DOM Method</a></li>
+          <li><a href="DOM_document.html">DOM Document</a></li>
+          <li><a href="DOM_elements.html">DOM Elements</a></li>
+          <li><a href="DOM_html.html">DOM Html</a></li>
+          <li><a href="DOM_forms.html">DOM Forms</a></li>
+          <li><a href="DOM_Css.html">DOM CSS</a></li>
+          <li><a href="DOM_Animations.html">DOM Animations</a></li>
+          <li><a href="DOM_Events.html">DOM Events</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-s-9">
+        <h1
+          style="
+            color: #000000;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 'sans-serif';
+            text-align: center;
+          "
+        >
+          FUNDAMENTAL JAVASCRIPT
+        </h1>
+        <p style="color: #000000; font-weight: 400; text-align: justify">
+          Fundamental JavaScript merujuk pada konsep-konsep mendasar yang
+          menjadi landasan utama dalam bahasa pemrograman JavaScript. Ini
+          mencakup pemahaman tentang tipe data, variabel, struktur kontrol,
+          fungsi, objek, dan penanganan peristiwa (event handling) dalam
+          JavaScript. Memahami fundamental JavaScript menjadi kunci penting bagi
+          pengembang web, karena hal ini membentuk fondasi yang diperlukan untuk
+          memahami dan membangun aplikasi web yang lebih kompleks. Dengan
+          pemahaman yang kuat terhadap dasar-dasar JavaScript, pengembang dapat
+          memanfaatkan potensi bahasa ini untuk menciptakan interaksi yang
+          dinamis dan responsif dalam halaman web.
+        </p>
+        <div style="display: flex; justify-content: center"></div>
+      </div>
+
+      <div class="col-3 col-s-12">
+        <div class="aside">
+          <h1>Konsep Dasar</h1>
+          <h2>Variabel</h2>
+          <p>
+            Variabel digunakan untuk menyimpan dan merujuk ke data. Variabel
+            dideklarasikan dengan kata kunci var, let, atau const.
+          </p>
+          <h2>Scope (Lingkup)</h2>
+          <p>
+            Variabel memiliki ruang lingkup (scope) yang menentukan di mana
+            variabel dapat diakses.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Resize the browser window to see how the content respond to the
+        resizing.
+      </p>
+    </div>
+  </body>
+</html>
