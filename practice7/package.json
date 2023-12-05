@@ -1,0 +1,19 @@
+{
+  "name": "mm4-ikhmal-bayu-pamungkas-21102129",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Ikhmal33/MM4-IKHMAL-BAYU-PAMUNGKAS-21102129)"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "jquery": "^3.7.1"
+  }
+}
